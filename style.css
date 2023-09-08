@@ -1,0 +1,207 @@
+/* Reset some default styles */
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Global styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #017143;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Content styles */
+.content {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textbox {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.textbox h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.textbox p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #017143;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.imgbox {
+    flex: 1;
+    text-align: center;
+}
+
+.starbucks {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Thumbnail styles */
+.thumb {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumb li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.thumb img {
+    width: 40px;
+    height: 40px;
+    transition: border-color 0.3s;
+}
+
+
+/* Circle styles */
+.circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+/* Social icons styles */
+.sci {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sci li {
+    margin: 0 10px;
+}
+
+.sci a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .textbox {
+        margin-right: 0;
+    }
+
+    .imgbox img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .thumb {
+        margin-top: 20px;
+    }
+
+    .sci {
+        margin-top: 20px;
+    }
+    .sci li a {
+        display: inline-block;
+        margin: 30px 0%;
+        transform: scale(0.6);
+        filter: none(1);
+    }
+}
